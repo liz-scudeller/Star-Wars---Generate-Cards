@@ -1,0 +1,209 @@
+                                             
+body{
+    box-sizing: border-box;
+    font-family: 'Star Jedi', sans-serif;
+    font-family: 'Star Jedi Hollow', sans-serif;
+    background-image: url('https://mcdn.wallpapersafari.com/medium/78/98/5R2EL3.jpg');
+}
+#grid{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 670px 50px;
+}
+.grid-even-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#bg{
+    background-color: black;
+    padding: 25px 25px 40px 25px;
+    border-radius: 8px;
+    -webkit-box-shadow:0px 0px 15px 0px rgba(255,255,255,0.85);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(255,255,255,0.85);
+    box-shadow: 0px 0px 15px 0px rgba(255,255,255,0.85);
+    position: relative;
+    margin-bottom: 15px;
+
+}
+
+.card{
+    background-color: #a2c6e1;
+    text-align: center;
+    padding: 0 5px 10px 5px;
+    max-width: 350px;
+    width: 100%;
+
+}
+.blue{
+    background-color: #36a2d4;
+    color: white;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 800;
+    margin-right: 1px;
+    border: solid 2px black;
+    padding-left: 20%;
+}
+.beige{
+    text-transform: uppercase;
+    background-color: #ede0b6;
+    color: #695b3c;
+    font-size: 11px;
+    font-weight: 800;
+    margin-left: 1px;
+    border: solid 2px black;
+    padding-right: 20%;
+}
+.hexagon {
+    cursor: default;
+    position: absolute;
+    width: 58.5px; 
+    height: 34.64101615137755px;
+    background-color: #e9b951;
+    margin: 17.320508075688775px auto 0 auto;
+    box-shadow: 0 0 0px rgba(0,255,255,1);
+    border-left: solid 1.5px rgba(0, 0, 0, 0);
+    border-right: solid 1.5px rgba(0, 0, 0, 0);
+    display: grid;
+    transition: 0s;
+}
+.left{
+    top: 2%;
+    left:2%;
+}
+.right{
+    top: 2%;
+    right:2%;
+    background-color: #4d8cc1;
+}
+.right img, .bottom_left img, .bottom_right img{
+    width: 48%;
+}
+.bottom_left{
+    top: 63%;
+    left:2%;
+    background-color: #b7212b;
+}
+
+.bottom_right{
+    top: 63%;
+    right:2%;
+    background-color: #2f77a4;
+}
+.hexagon:before, .hexagon:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 42.426406871192846px;
+    height: 42.426406871192846px;
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 7.286796564403577px;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 1);
+    transition: 0s;
+}
+
+.hexagon:before {
+    top: -21.213203435596423px;
+    border-top: solid 2.121320343559643px #ffffff;
+    border-right: solid 2.121320343559643px #ffffff;
+}
+
+.hexagon:after {
+    bottom: -21.213203435596423px;
+    border-bottom: solid 2.121320343559643px rgb(0, 0, 0);
+    border-left: solid 2.121320343559643px rgba(0, 0, 0, 0);
+}
+
+.hexagon span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 42px;
+    color: #ffffff;
+    top: 0.8660254037844386px;
+    left: 0;
+    width: 57px;
+    height: 32.9090px;
+    z-index: 2;
+    background: inherit;
+    transition: 0s;
+    -webkit-text-stroke: 1px black;
+    font-weight: 600;
+}
+    
+#name{
+    font-size: 20px;
+    font-weight: 800;
+    background-color: white;
+    margin-bottom: 2px;
+    margin-top: 3px;
+    text-transform: uppercase;
+    padding: 5px 23px;
+}
+.under_name{
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: white;
+    text-transform: uppercase;
+    letter-spacing: -0.8px;
+    border-radius: 0 0 20px 20px;
+    max-width: 70%;
+    margin-inline: auto;
+    padding: 2px 0;
+}
+.image_container{
+    width: 100%;
+    height: 100%;
+}
+#photo{
+    object-fit: cover;
+    margin: auto;
+    width: 350px;
+    height:300px;
+    object-position: 0 13%;
+    
+}
+.position{
+    background-color: white;
+    padding: 7px 37px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 13px;
+    letter-spacing: -0.6px;
+    margin-top: 4px;
+}
+.description{
+    background-color: white;
+    height:90px;
+    max-width: 100%;
+    padding: 20px;
+    margin-top: 8px;
+    font-size: 18px;
+    text-align: left;
+    overflow-x: auto;
+    vertical-align: top;
+}
+.bold{
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+.description span{
+    font-weight: 400;
+}
+#generate_card_btn{
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #2f77a4;
+    color: white;
+}
+#generate_card_btn:hover {
+    background-color: white;
+    color: #2f77a4;
+}

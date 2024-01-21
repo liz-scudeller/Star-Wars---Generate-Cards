@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/star-jedi" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="grid">
+        <div id="bg">
+            <div class="card">
+                <div class="hex_size">
+                    <div class="hexagon left"><span class="num"></span></div>
+                    <div class="hexagon right"><span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Rebel_Alliance_logo.svg/300px-Rebel_Alliance_logo.svg.png" alt=""></span></div>
+                    <div class="hexagon bottom_left"><span><img src="https://icons.iconarchive.com/icons/sensibleworld/starwars/256/Death-Star-icon.png" alt=""></span></div>
+                    <div class="hexagon bottom_right"><span><img src="https://seeklogo.com/images/G/Galactic_Empire-logo-7A19A28ABA-seeklogo.com.png" alt=""></span></div>    
+                </div>
+                <div class="top_info">
+                    <div class="grid-even-col">
+                        <div class="blue">Homeworld</div>
+                        <div class="beige"></div>
+                    </div>
+                    <div class="info">
+                        <h1 id="name">Character Name</h1>
+                        <p class="under_name">Species</p>
+                    </div>
+                </div>
+                <div class="image_container">
+                    <img src="" alt="Star Wars Character Image" id="photo">
+                </div>
+                
+                <div class="position">
+                    Force . Rebel
+                </div>
+                <div class="description">
+                    <p class="bold">Masters: <span id="masters"></span></p>
+                    <p class="bold">Apprentices: <span id="apprentices"></span></p>
+                </div>
+            </div>
+        </div>
+        <div id="btn_box">
+            <button id="generate_card_btn">Generate New Card</button>
+        </div>
+    </div>
+    
+    
+    
+    <script language="JavaScript" type="text/javascript" src="script.js"></script>
+</body>
+</html>
