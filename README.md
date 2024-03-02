@@ -1,4 +1,4 @@
-  Star Wars Project
+  #Star Wars Project - 
   Generate random Star Wars character cards
   
   See the Pen [
