@@ -10,6 +10,7 @@ Star Wars Character Card Generator is a web application that dynamically generat
 - [Contributing](#contributing)
 - [License](#license)
 - [Installation](#installation)
+- [CodePen](#codepen)
 
 ## Introduction
 
@@ -40,6 +41,10 @@ Contributions are welcome! If you find a bug or have a feature request, please o
 ## License
 
 This project is licensed under the MIT License.
+
+## CodePen
+
+See the Pen [Star Wars - Generate Cards](https://codepen.io/liz-scudeller/pen/ExMXZRr) by lizscudeller ([@liz-scudeller](https://codepen.io/liz-scudeller)) on [CodePen](https://codepen.io).
 
 ## Installation
 
